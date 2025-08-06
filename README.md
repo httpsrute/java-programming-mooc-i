@@ -7,7 +7,7 @@ This repository contains **my personal solutions** to the exercises from the **J
 The full **Java Programming** MOOC is divided into two main parts:
 
 - **Programming I** – beginner level (covered in this repo)
-- **Programming II** – intermediate level ([see my solutions here](https://github.com/your-username/java-programming-mooc-ii))
+- **Programming II** – intermediate level ([see my solutions here](https://github.com/httpsrute/java-programming-mooc-ii))
 
 This repository covers the following sections:
 
