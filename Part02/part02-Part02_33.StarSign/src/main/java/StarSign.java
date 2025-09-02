@@ -25,9 +25,7 @@ public class StarSign {
 
     public static void printRectangle(int width, int height) {
         for (int i = height; i > 0; i--){
-            for (int j = width; i > 0; i--) {
-                printStars(width);
-            }
+            printStars(width);
         }
     }
 
