@@ -1,16 +1,12 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AgeOfTheOldest {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Enter with your name and age separated by a comma, e.g., 'Rute,27':");
-            
-            ArrayList<Integer> ages = new ArrayList<>();
+            int age, oldest = 0;
 
             while (true) {
-
                 String input = scanner.nextLine();
 
                 if (input.equals("")) {
@@ -19,21 +15,13 @@ public class AgeOfTheOldest {
 
                 String[] parts = input.split(",");
 
-                int age = Integer.valueOf(parts[1]);               
+                age = Integer.valueOf(parts[1]);
 
-                ages.add(age);
-            }
-
-            int older = ages.get(0);
-
-            for (int currentAge : ages) {
-                System.out.println(currentAge);
-                if (older < currentAge) {
-                    older = currentAge;
+                if (age > oldest) {
+                    oldest = age;
                 }
             }
-
-            System.out.println(older);
+            System.out.println(oldest);
         }
     }
 }
